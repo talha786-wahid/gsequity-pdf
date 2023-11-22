@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* FOOTER */
+footer .footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 10px 6px;
+}
+footer .footer-container .footer-right-col {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-container .footer-logo {
+  width: 40px;
+  height: 40px;
+}
+footer .footer-container h1 {
+  font-size: 10px;
+  font-weight: 300;
+}
+footer .footer-container .footer-logo-block {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+footer .footer-container .footer-logo-block p {
+  font-size: 10px;
+}
+/* 1st section/page */
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 2nd page/section */
+.commitment-status {
+  margin: 0 0 50px 0;
+}
+.commitment-status-section {
+  background: #0b4423;
+  margin: 10px 6px;
+  padding: 60px 0 30px 0;
+}
+.commitment-status-heading {
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+}
+.commitment-status-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-content: center;
+  grid-gap: 20px;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.commitment-status-block .right-icon {
+  margin: auto;
+}
+.commitment-status-block .right-icon .icon-container {
+  position: relative;
+  width: 30px;
+  height: 10px;
+}
+
+.commitment-status-block .stick {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 8px;
+  background-color: #ffffff;
+}
+
+.commitment-status-block .right-arrow {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+}
+.commitment-status-block .commitment-status-block-heading {
+  color: #ffffff;
+  font-size: 26px;
+}
+.commitment-status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  margin-left: 6px;
+  margin-right: 6px;
+  gap: 3px;
+}
+.commitment-status-grid .commitment-status-col {
+  margin-top: 15px;
+}
+.commitment-status-grid .commitment-status-col .commitment-status-col-ol {
+  margin-left: 15px;
+}
+.commitment-status-grid .commitment-status-col .col-icon-box {
+  text-align: center;
+}
+.commitment-status-grid .commitment-status-col .cs-col-icon {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading {
+  margin-top: 5px;
+  text-align: center;
+  padding: 3px 0;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading.onedd {
+  background-color: #ebf1de;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading.add {
+  background-color: #c3d69b;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading.clm {
+  background-color: #4f6228;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading.clm h1,
+.commitment-status-grid .commitment-status-col .cs-col-heading.icp h1,
+.commitment-status-grid .commitment-status-col .cs-col-heading.com h1 {
+  color: #ffffff;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading.icp {
+  background-color: #77933c;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading.com {
+  background-color: #006600;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading.com {
+  color: #ffffff;
+}
+.commitment-status-grid .commitment-status-col .cs-col-heading h1 {
+  font-size: 16px;
+  color: #000000;
+}
+.commitment-status-grid .commitment-status-col ul {
+  margin: 20px 4px 10px 40px;
+}
+.commitment-status-grid .commitment-status-col ul li {
+  font-size: 14px;
+}
+
+/* 3rd Section/page */
+.placement-summary {
+  margin-bottom: 20px;
+}
+.placement-summary-conatainer {
+  margin-top: 40px;
+}
+.placement-summary-conatainer .placement-summary-heading {
+  font-size: 25px;
+  text-align: center;
+}
+.placement-summary-conatainer .placement-table-header {
+  background-color: #014217;
+}
+.placement-summary-conatainer .placement-table-header h1 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 3px 0;
+}
+/* Placement Table */
+.placement-summary-conatainer .placement-table-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+  column-gap: 2px;
+  row-gap: 5px;
+}
+.placement-table-container .placement-table-col .bar-chart-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.placement-table-container
+  .placement-table-col
+  .bar-chart-container
+  .bar-chart-col
+  canvas {
+  width: 100%;
+  max-width: 800px;
+}
+.placement-summary-conatainer .placement-table-container table {
+  border-collapse: separate;
+  width: 100%;
+}
+
+.placement-summary-conatainer .placement-table-container table thead th {
+  border: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 3px 0 3px 20px;
+  text-align: left;
+}
+
+.placement-summary-conatainer .placement-table-container table td {
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.placement-summary-conatainer .placement-table-container table th {
+  background-color: #dddddd;
+  font-weight: bold;
+}
+
+.placement-summary-conatainer .placement-table-container table thead td {
+  background-color: white;
+  color: black;
+  padding: 3px 0 3px 20px !important;
+  font-size: 13px;
+}
+
+/* 4th section/page summary-investor-activity */
+.summary-investor-activity {
+  margin-bottom: 50px;
+}
+.summary-investor-activity .summary-investor-activity-container {
+  background: #0b4423;
+  margin: 10px 6px;
+  padding: 44px 0 2px 0;
+}
+.summary-investor-activity .summary-investor-activity-container h1 {
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+.summary-investor-activity .summary-investor-activity-container p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 14px;
+}
+.summary-investor-activity .summary-investor-activity-table {
+  margin: 10px 6px;
+  overflow-x: auto;
+}
+.summary-investor-activity .summary-investor-activity-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.summary-investor-activity .summary-investor-activity-table table thead {
+  background: #0b4423;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.summary-investor-activity .summary-investor-activity-table table thead th {
+  padding: 3px 0;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+}
+.summary-investor-activity .summary-investor-activity-table table tbody tr {
+  font-size: 14px;
+  padding: 14px 0 4px 3px;
+  text-align: center;
+}
+
+.summary-investor-activity
+  .summary-investor-activity-table
+  table
+  tbody
+  tr:nth-child(odd) {
+  background: #e5e7e9;
+}
+@media only screen and (max-width: 600px) {
+  .summary-investor-activity .summary-investor-activity-table table thead th {
+    font-size: 12px;
+  }
+
+  .summary-investor-activity .summary-investor-activity-table table tbody tr {
+    font-size: 12px;
+  }
+}
+/* 5th Page  */
+.investor-class {
+  margin: 10px 6px 60px 6px;
+}
+.investor-class .investor-class-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.investor-class .investor-class-table th,
+td {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  text-align: center;
+}
+
+.investor-class .investor-class-table th {
+  background-color: #0b4423;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+}
+.investor-class .investor-class-table th.text-align {
+  text-align: center;
+}
+.investor-class .investor-class-table th span {
+  font-weight: 300;
+}
+.investor-class .investor-class-table .investor-class-comments {
+  border: 2px solid #000000;
+  margin-top: 1px;
+}
+.investor-class
+  .investor-class-table
+  .investor-class-comments
+  .investor-class-comments-header {
+  background-color: #0b4423;
+  color: #ffffff;
+  text-align: left;
+  margin: 1px;
+}
+.investor-class
+  .investor-class-table
+  .investor-class-comments
+  .investor-class-comments-header
+  .comments-heading {
+  font-size: 14px;
+  padding: 3px 0 3px 15px;
+}
+
+.investor-class .investor-class-table .investor-class-comments .notes-ul {
+  margin: 10px 0 10px 40px;
+  list-style-type: disc;
+}
+.investor-class .investor-class-table .investor-class-comments .notes-ul li {
+  font-size: 12px;
+}
+
+/* 51st page/section */
+.passed-investors {
+}
+.passed-investors .passed-investors-container {
+  background-color: #0b4423;
+  text-align: center;
+  padding: 30px 0;
+}
+.passed-investors .passed-investors-container .passed-investors-heading {
+  font-size: 16px;
+  color: #ffffff;
+}
+.passed-investors .passed-investors-table table {
+  width: 100%;
+}
+.passed-investors .passed-investors-table table thead {
+  background-color: #0b4423;
+}
+.passed-investors .passed-investors-table table thead th {
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 3px 7px;
+}
+.passed-investors .passed-investors-table table tbody td {
+  background: #e5e7e9;
+  border: 1px solid #000000;
+}
